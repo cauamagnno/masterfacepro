@@ -96,4 +96,13 @@
     .grid {
         grid-template-columns: 1fr;
     }
+
+    .card {
+        text-align: center;
+    }
+
+    .cardContent {
+        flex-direction: column;
+        align-items: center;
+    }
 }

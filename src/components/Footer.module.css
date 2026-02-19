@@ -96,5 +96,14 @@
     .bottom {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .legal {
+        justify-content: center;
     }
 }
