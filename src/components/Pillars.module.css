@@ -1,0 +1,128 @@
+.section {
+    padding: 8rem 0;
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    /* Initial padding for hover effects */
+}
+
+.card {
+    padding: 2rem 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.number {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.2);
+    transition: color 0.3s ease;
+}
+
+.card:hover .number {
+    color: var(--color-primary);
+}
+
+.iconWrapper {
+    color: var(--color-primary);
+    background: rgba(212, 175, 55, 0.1);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.cardTitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.cardDesc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.ctaWrapper {
+    text-align: center;
+}
+
+.ctaButton {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 1024px) {
+    .gridContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .gridContainer {
+        display: flex;
+        /* was grid */
+        flex-direction: column;
+        overflow-x: visible;
+        padding-bottom: 0;
+        gap: 1.5rem;
+    }
+
+    .card {
+        min-width: auto;
+        scroll-snap-align: none;
+    }
+}

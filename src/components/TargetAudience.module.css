@@ -1,0 +1,114 @@
+.section {
+    padding: 8rem 0;
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    padding: 3rem;
+    height: 100%;
+    border-top-width: 4px;
+}
+
+.positive {
+    border-color: #00D9FF;
+    /* Cyan/Greenish neon */
+}
+
+.negative {
+    border-color: #ff4d4d;
+    /* Red neon */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.iconWrapper {
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green {
+    background: rgba(0, 217, 255, 0.1);
+    color: #00D9FF;
+}
+
+.red {
+    background: rgba(255, 77, 77, 0.1);
+    color: #ff4d4d;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+.checkIcon {
+    color: #00D9FF;
+    flex-shrink: 0;
+}
+
+.xIcon {
+    color: #ff4d4d;
+    flex-shrink: 0;
+}
+
+.ctaWrapper {
+    text-align: center;
+}
+
+.ctaButton {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 900px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

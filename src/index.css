@@ -1,0 +1,90 @@
+:root {
+  /* Colors */
+  --color-primary: #D4AF37;
+  --color-secondary: #1a1a1a;
+  --color-accent: #ffffff;
+  --color-neon-gold: #FFD700;
+  --color-neon-cyan: #00D9FF;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --text-main: #ffffff;
+  --text-muted: #a1a1a1;
+
+  /* Typography */
+  --font-heading: 'Outfit', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Effects */
+  --shadow-neon: 0 0 10px rgba(212, 175, 55, 0.5);
+  --shadow-glass: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --backdrop-blur: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-secondary);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  word-break: break-word;
+  /* Prevent duplicate overflow issues */
+  hyphens: auto;
+}
+
+/* ... existing code ... */
+
+.text-gradient {
+  background: linear-gradient(to right, #b8860b, #daa520);
+  /* Darker Gold for visibility on light bg */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Fallback for better contrast */
+  color: #b8860b;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--backdrop-blur));
+  -webkit-backdrop-filter: blur(var(--backdrop-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-glass);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--color-primary);
+}
+
+.glow-border {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-gold);
+}

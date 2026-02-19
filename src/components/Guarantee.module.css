@@ -1,0 +1,109 @@
+.section {
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    max-width: 800px;
+    width: 100%;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-color: rgba(212, 175, 55, 0.3);
+    background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.sealWrapper {
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.seal {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px dashed var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.seal::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary);
+}
+
+.shieldIcon {
+    color: var(--color-primary);
+}
+
+.badge {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+.description {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.subtext {
+    color: var(--text-main);
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+}
+
+.ctaButton {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .card {
+        padding: 2rem 1.5rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
