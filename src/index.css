@@ -43,7 +43,51 @@ body {
   hyphens: auto;
 }
 
-/* ... existing code ... */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: var(--font-heading);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  /* Increased side padding */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+    /* Better side margins on mobile */
+  }
+}
 
 .text-gradient {
   background: linear-gradient(to right, #b8860b, #daa520);
