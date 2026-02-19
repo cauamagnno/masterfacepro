@@ -59,8 +59,7 @@ const Hero = ({ onOpenBooking }) => {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6, duration: 0.8 }}
-                        className="glass-card"
-                        style={{ padding: '1.5rem', margin: '2rem 0', display: 'inline-block' }}
+                        className={`glass-card ${styles.infoBox}`}
                     >
                         <div className={styles.eventInfo}>
                             <div className={styles.infoItem}>
