@@ -22,7 +22,7 @@ const Creators = ({ onOpenBooking }) => {
                         </div>
                         <div className={styles.content}>
                             <h3 className="text-gradient" style={{ fontSize: '1.8rem', marginBottom: '0.2rem' }}>Luana Amaral</h3>
-                            <p className={styles.role}>34 anos • Biomédica Esteta</p>
+                            <p className={styles.role}>Cirurgiã-dentista, especialista em harmonização facial</p>
                             <div className={styles.iconTag}>
                                 <Briefcase size={16} /> Especialista Técnica
                             </div>
